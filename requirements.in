@@ -28,4 +28,7 @@ numba>=0.59
 einops~=0.8
 jaxtyping>=0.2.25   # versions <0.2.25 do not easily support runtime typechecking
 beartype>=0.18      # compatible typechecker to use with jaxtyping
-torch>=2.3.1        # 2.2 is broken, latest-patch versions 2.3.1 - 2.7.1 are confirmed to work correctly
+#torch>=2.3.1        # 2.2 is broken, latest-patch versions 2.3.1 - 2.7.1 are confirmed to work correctly
+torch @ https://download.pytorch.org/whl/cu130/torch-2.3.1%2Bcu130-cp310-cp310-linux_x86_64.whl  
+# torchvision @ https://download.pytorch.org/whl/cu130/torchvision-0.18.1%2Bcu130-cp310-cp310-linux_x86_64.whl  
+  
